@@ -1,0 +1,106 @@
+*,
+*::before,
+*::afte {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-purple: hsl(259, 100%, 65%);
+  --primary-light-red: hsl(0, 100%, 67%);
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-off-white: hsl(0, 0%, 94%);
+  --neutral-light-grey: hsl(0, 0%, 86%);
+  --neutral-smokey-grey: hsl(0, 1%, 44%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--neutral-off-white);
+}
+.main-container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--neutral-white);
+  width: 30rem;
+  max-width: 80%;
+  padding: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 7rem;
+  position: relative;
+}
+
+.form-container {
+  display: flex;
+  border-bottom: 2px solid var(--neutral-off-white);
+  margin-bottom: 2rem;
+  font-family: "Poppins";
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  font-family: "Poppins";
+}
+
+input {
+  padding: 0.8rem;
+  width: 5em;
+  border: 0.2em solid var(--neutral-off-white);
+  border-radius: 0.5em;
+  outline: none;
+}
+input:hover {
+  border: 2px solid var(--primary-purple);
+}
+
+small {
+  color: var(--primary-light-red);
+  font-size: 0.6rem;
+}
+
+span {
+  font-size: 5rem;
+  color: var(--primary-purple);
+  font-style: italic;
+}
+
+p {
+  font-size: 2.5rem;
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 700;
+}
+.submit-btn {
+  border-radius: 50%;
+  padding: 0.6rem;
+  border: none;
+  background-color: var(--primary-purple);
+  position: absolute;
+  right: 2em;
+  top: 8em;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--neutral-off-black);
+}
+.form-label {
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  color: var(--neutral-smokey-grey);
+}

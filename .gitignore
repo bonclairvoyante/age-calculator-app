@@ -1,0 +1,10 @@
+
+*.sketch
+*.fig
+*.jpg
+
+*.xd
+
+
+.DS_Store
+.prettierignore

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <form class="form-container">
+        <div class="input-container">
+          <label for="day" class="form-label">DAY</label>
+          <input
+            type="number"
+            class="form-control"
+            id="day"
+            value=""
+            max="2"
+            maxlength="2"
+            pattern="[0-9]+"
+            required=""
+          />
+          <small>Must be a valid day</small>
+        </div>
+        <div class="input-container">
+          <label for="month" class="form-label">MONTH</label>
+          <input
+            type="number"
+            class="form-control"
+            id="month"
+            value=""
+            required=""
+            max="2"
+            maxlength="2"
+            pattern="[0-9]+"
+          />
+          <small>Must be a valid month</small>
+        </div>
+        <div class="input-container">
+          <label for="year" class="form-label">YEAR</label>
+          <input
+            type="number"
+            class="form-control"
+            id="year"
+            required=""
+            max="2"
+            maxlength="4"
+            pattern="[0-9]+"
+          />
+          <small>Must be in the past</small>
+        </div>
+      </form>
+      <button class="submit-btn">
+        <img
+          src="/assets/images/icon-arrow.svg"
+          alt="white downward-pointing arrow"
+        />
+      </button>
+
+      <div class="results">
+        <p class="years"><span>--</span>years</p>
+        <p class="months"><span>--</span>months</p>
+        <p class="days"><span>--</span>days</p>
+      </div>
+    </div>
+  </body>
+</html>
