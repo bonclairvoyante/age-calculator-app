@@ -23,42 +23,42 @@
           <label for="day" class="form-label">DAY</label>
           <input
             type="number"
-            class="form-control"
+            class="input-day"
             id="day"
             value=""
             max="2"
             maxlength="2"
             pattern="[0-9]+"
-            required=""
+            required
           />
-          <small>Must be a valid day</small>
+          <small class="error-day"></small>
         </div>
         <div class="input-container">
           <label for="month" class="form-label">MONTH</label>
           <input
             type="number"
-            class="form-control"
+            class="input-month"
             id="month"
             value=""
-            required=""
             max="2"
             maxlength="2"
             pattern="[0-9]+"
+            required
           />
-          <small>Must be a valid month</small>
+          <small class="error-month"></small>
         </div>
         <div class="input-container">
           <label for="year" class="form-label">YEAR</label>
           <input
             type="number"
-            class="form-control"
+            class="input-year"
             id="year"
-            required=""
             max="2"
             maxlength="4"
             pattern="[0-9]+"
+            required
           />
-          <small>Must be in the past</small>
+          <small class="error-year"></small>
         </div>
       </form>
       <button class="submit-btn">
@@ -69,10 +69,12 @@
       </button>
 
       <div class="results">
-        <p class="years"><span>--</span>years</p>
-        <p class="months"><span>--</span>months</p>
-        <p class="days"><span>--</span>days</p>
+        <p class="output-year"><span>--</span>years</p>
+        <p class="output-month"><span>--</span>months</p>
+        <p class="output-day"><span>--</span>days</p>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
