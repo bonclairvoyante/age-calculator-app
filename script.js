@@ -88,6 +88,6 @@ function calcAge() {
     outputMonth.textContent = ageMonth;
     outputYear.textContent = ageYear;
   } else {
-    alert('error');
+    // alert('error');
   }
 }

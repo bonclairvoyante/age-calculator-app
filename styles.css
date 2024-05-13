@@ -18,7 +18,7 @@
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
@@ -47,14 +47,16 @@ body {
   display: flex;
   border-bottom: 2px solid var(--neutral-off-white);
   margin-bottom: 2rem;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 .input-container {
   display: flex;
   flex-direction: column;
   margin-left: 2em;
   margin-bottom: 2em;
-  font-family: "Poppins";
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: normal;
 }
 
 input {
@@ -63,6 +65,7 @@ input {
   border: 0.2em solid var(--neutral-off-white);
   border-radius: 0.5em;
   outline: none;
+  font-family: 'Poppins';
 }
 input:hover {
   border: 2px solid var(--primary-purple);
@@ -81,7 +84,7 @@ span {
 
 p {
   font-size: 2.5rem;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: italic;
   font-weight: 400;
 }
